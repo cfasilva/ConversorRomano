@@ -5,8 +5,6 @@
  */
 package Conversor;
 
-import com.sun.javafx.scene.layout.region.Margins;
-
 /**
  *
  * @author Cleber e Walter
