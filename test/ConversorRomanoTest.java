@@ -7,15 +7,16 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import static org.junit.Assert.*;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
+import Conversor.ConversorRomano;
+
 /**
- *
- * @author aluno
+ * @author cfasilva
  */
-@RunWith(Suite.class)
-@Suite.SuiteClasses({})
 public class ConversorRomanoTest {
 
     @BeforeClass
@@ -32,6 +33,14 @@ public class ConversorRomanoTest {
 
     @After
     public void tearDown() throws Exception {
+    }
+    
+    @Test
+    public void deveEntenderOSimboloI(){
+        ConversorRomano conversor = new ConversorRomano();
+        int numero = conversor.Converte("I");
+        
+        assertEquals(1, numero);
     }
     
 }
